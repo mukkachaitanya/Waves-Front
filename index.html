@@ -1,0 +1,85 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<title>Waves 2016</title>
+	<link href="https://fonts.googleapis.com/css?family=Aldrich" rel="stylesheet">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+	<link href="styles.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+
+	<div id="background" class="container-fluid">
+		<div id="Layer3"><img src="images/Layer3.png"></div>
+
+		<div id="LeftTick" data-0="transform: rotate(-20.45deg)" data-200p="transform: rotate(0deg)">
+
+			<img src="images/LeftTick.png">
+
+		</div>
+		<div id="RightTick" data-0="transform: rotate(-73.3deg)"
+												data-50p="transform: rotate(-52.94deg)"
+												data-100p="transform: rotate(-30.8deg)"
+												data-150p="transform: rotate(-10.6deg)"
+												data-200p="transform: rotate(3deg)">
+			<img src="images/RightTick.png">
+		</div>
+		<div id="Ring" data-0p="transform: scale(1)" data-200p="transform: scale(1.005)"><img src="images/Ring.png"></div>
+
+		<div id="TidesofTime">
+			<img src="images/TidesofTime.png">
+		</div>
+
+		<div id="layer_2016"
+					data-150p="transform: scale(0);"
+					data-210p="transform: scale(1);">
+			<img src="images/layer_2016.png">
+		</div>
+
+		<div id="WAES" data-180p="opacity: 0;"
+										data-220p=" opacity:1; transform: scale(1.03);">
+			<div id="S"><img src="images/S.png"></div>
+			<div id="E"><img src="images/E.png"></div>
+			<div id="A"><img src="images/A.png"></div>
+			<div id="W"><img src="images/W.png"></div>
+		</div>
+
+		<div id="#Timeline" data-0p="!transform: scale(0.7);" data-200p="!transform: scale(1);" >
+			<div id="Meter" data-0p="opacity: 0;" data-20p=" opacity:1;">
+				<img src="images/Meter.png">
+			</div>
+			<div id="layer_2015" data-190p="opacity: 0;" data-210p=" opacity:1;">
+				<img src="images/layer_2015.png">
+			</div>
+			<div id="layer_2006" data-140p="opacity: 0;" data-160p=" opacity:1;">
+				<img src="images/layer_2006.png">
+			</div>
+			<div id="layer_2000" data-90p="opacity: 0;" data-100p=" opacity:1;">
+				<img src="images/layer_2000.png">
+			</div>
+			<div id="layer_1995" data-40p="opacity: 0;" data-60p=" opacity:1;">
+				<img src="images/layer_1995.png">
+			</div>
+			<div id="layer_1990" data-20p="opacity: 0;" data-30p=" opacity:1;">
+				<img src="images/layer_1990.png">
+			</div>
+		</div>
+	</div>
+
+	<div id="scroll" aria-hidden="true" data-0="opacity: 1;" data-30="opacity: 0;" >
+		<h3 style="font-size: 1.7em; margin: 0; font-family: Aldrich;">SCROLL</h3>
+		<i id="arrows" class="fa fa-angle-double-down fa-3x"></i>
+		<br>
+	</div>
+
+
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js" charset="utf-8"></script>
+	<script type="text/javascript" src="js/skrollr.min.js"></script>
+	<script type="text/javascript">
+		var s = skrollr.init(smoothScrolling=true);
+	</script>
+</body>
+
+</html>

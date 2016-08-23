@@ -1,0 +1,267 @@
+ body
+{
+    margin: 0;
+    padding: 0;
+
+    background: #f2f5f7 url('images/BG.png') -552px -176px repeat-x fixed ;
+}
+
+@font-face
+{
+    font-family: 'Parchment';
+    font-style: normal;
+
+    src: url('fonts/Parchment.ttf') format('truetype');
+    font-weight: normal;
+}
+
+#background
+{
+    position: fixed;
+    z-index: 0;
+    top: 0;
+    left: 146;
+
+    overflow: hidden;
+
+    width: 1280px;
+    height: 742px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+#Layer3
+{
+    position: absolute;
+    z-index: 1;
+    top: -70px;
+    left: 0;
+
+    width: 1280px;
+    height: 959px;
+}
+
+
+#LeftTick
+{
+    position: absolute;
+    z-index: 3;
+    top: 127.7px;
+    left: 504px;
+
+    width: 279px;
+    height: 412px;
+
+    transform-origin: 216px 376px;
+}
+
+#RightTick
+{
+    position: absolute;
+    z-index: 4;
+    top: 127.7px;
+    left: 504px;
+
+    width: 335px;
+    height: 412px;
+
+    transform-origin: 215.5px 366px;
+}
+
+#Ring
+{
+    position: absolute;
+    z-index: 5;
+    top: 434px;
+    left: 654px;
+
+    width: 106px;
+    height: 106px;
+}
+
+#Meter
+{
+    position: absolute;
+    z-index: 6;
+    top: 45px;
+    left: 408px;
+
+    width: 560px;
+    height: 253px;
+}
+
+#TidesofTime
+{
+    position: absolute;
+    z-index: 7;
+    top: 555px;
+    left: 523px;
+
+    width: 345px;
+    height: 57px;
+}
+
+#layer_2016
+{
+    position: absolute;
+    z-index: 8;
+    top: 464px;
+    left: 654px;
+
+    width: 137px;
+    height: 53px;
+}
+
+#S
+{
+    position: absolute;
+    z-index: 9;
+    top: 310px;
+    left: 893px;
+
+    width: 88px;
+    height: 141px;
+}
+
+#E
+{
+    position: absolute;
+    z-index: 10;
+    top: 310px;
+    left: 808px;
+
+    width: 84px;
+    height: 140px;
+}
+
+#A
+{
+    position: absolute;
+    z-index: 11;
+    top: 303px;
+    left: 514px;
+
+    width: 130px;
+    height: 144px;
+}
+
+#W
+{
+    position: absolute;
+    z-index: 12;
+    top: 271px;
+    left: 382px;
+
+    width: 150px;
+    height: 176px;
+}
+
+#layer_2015
+{
+    position: absolute;
+    z-index: 13;
+    top: 158px;
+    left: 954px;
+
+    width: 31px;
+    height: 65px;
+}
+
+#layer_2006
+{
+    position: absolute;
+    z-index: 14;
+    top: 38px;
+    left: 826px;
+
+    width: 59px;
+    height: 40px;
+}
+
+#layer_2000
+{
+    position: absolute;
+    z-index: 15;
+    top: 15px;
+    left: 657px;
+
+    width: 67px;
+    height: 14px;
+}
+
+#layer_1995
+{
+    position: absolute;
+    z-index: 16;
+    top: 52px;
+    left: 493px;
+
+    width: 58px;
+    height: 41px;
+}
+
+#layer_1990
+{
+    position: absolute;
+    z-index: 17;
+    top: 173px;
+    left: 394px;
+
+    width: 34px;
+    height: 61px;
+}
+
+
+@-webkit-keyframes scrollAnimation
+{
+    from
+    {
+        top: 0; opacity: 1;
+    }
+    to
+    {
+        top: 25px; opacity: .2;
+    }
+}
+@-moz-keyframes scrollAnimation
+{
+    from
+    {
+        top: 0; opacity: 1;
+    }
+    to
+    {
+        top: 25px; opacity: .2;
+    }
+}
+
+@keyframes scrollAnimation
+{
+    from
+    {
+        top: 0; opacity: 1;
+    }
+    to
+    {
+        top: 25px; opacity: .2;
+    }
+}
+
+#arrows
+{
+    -webkit-animation: scrollAnimation .7s alternate linear infinite;
+       -moz-animation: scrollAnimation .7s alternate linear infinite;
+            animation: scrollAnimation .7s alternate linear infinite;
+}
+#scroll
+{
+    position: fixed;
+    right: 0;
+    bottom: 10px;
+
+    margin-right: 16px;
+
+    text-align: center;
+
+    color: #e4e9ed ;
+}
