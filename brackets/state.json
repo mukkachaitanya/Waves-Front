@@ -169,11 +169,11 @@
             }
         }
     },
-    "nextHealthDataSendTime": 1472008118880,
+    "nextHealthDataSendTime": 1472131029787,
     "workingSetSortMethod": "cmd.sortWorkingSetByAdded",
     "healthDataNotificationShown": true,
     "auto-install-extensions": {},
-    "lastInfoURLFetchTime": 1471893280965,
+    "lastInfoURLFetchTime": 1472044634130,
     "updateInfo": [
         {
             "buildNumber": 16898,
@@ -1420,5 +1420,8 @@
         "visible": false
     },
     "livedev.afterFirstLaunch": "true",
-    "UUID": "99b1d594-2256-4319-889e-509b13ffba59"
+    "UUID": "99b1d594-2256-4319-889e-509b13ffba59",
+    "first-pane": {
+        "size": 889
+    }
 }

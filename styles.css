@@ -6,18 +6,24 @@
     background: #f2f5f7 url('images/BG.png') -552px -176px repeat-x fixed ;
 }
 
+.stop-scrolling {
+  height: 100%;
+  overflow: hidden;
+}
+
+
 @font-face
 {
     font-family: 'Parchment';
+    font-weight: normal;
     font-style: normal;
 
     src: url('fonts/Parchment.ttf') format('truetype');
-    font-weight: normal;
 }
 
 #background
 {
-    position: fixed;
+    position: relative;
     z-index: 0;
     top: 0;
     left: 146;
@@ -26,8 +32,17 @@
 
     width: 1280px;
     height: 742px;
-    margin-right: auto;
-    margin-left: auto;
+    /*width: 100%;
+    height: 100%;*/
+    /*margin-right: auto;
+    margin-left: auto;*/
+}
+
+a
+{
+    text-decoration: none;
+
+    color: inherit;
 }
 
 #Layer3
@@ -99,6 +114,8 @@
 
     width: 345px;
     height: 57px;
+
+    text-overflow: clip;
 }
 
 #layer_2016
@@ -253,15 +270,27 @@
        -moz-animation: scrollAnimation .7s alternate linear infinite;
             animation: scrollAnimation .7s alternate linear infinite;
 }
-#scroll
+
+.scroll a
+{
+    text-decoration: none;
+
+    color: inherit;
+}
+
+.scroll
 {
     position: fixed;
     right: 0;
-    bottom: 10px;
+    bottom: 0.75%;
 
-    margin-right: 16px;
+    margin-right: 1.2%;
 
     text-align: center;
 
     color: #e4e9ed ;
+}
+
+#continue :hover{
+  transform: scale(1.05);
 }
