@@ -33,5 +33,4 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 $('#next').on('Click', function() {
-    $('background').fadeOut();
 });
