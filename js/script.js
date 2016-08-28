@@ -1,8 +1,8 @@
 //Courtesy https://github.com/danfickle/
 
 var myresize = function() {
-    var Width = 1340;
-    var Height = 643;
+    var Width = 1280;
+    var Height = 742;
     var ratioW = window.innerWidth / Width;
     var ratioH = window.innerHeight / Height;
 
@@ -30,7 +30,4 @@ myresize();
 
 document.addEventListener('DOMContentLoaded', function() {
     myresize();
-});
-
-$('#next').on('Click', function() {
 });
