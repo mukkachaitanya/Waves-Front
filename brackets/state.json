@@ -5,7 +5,7 @@
     "welcomeProjects": [
         "/samples/root/Getting Started"
     ],
-    "projectPath": "/projects/psdtowebwaves2k16final2/",
+    "projectPath": "/samples/root/Getting Started/",
     "afterFirstLaunch": "true",
     "project": {
         "/samples/root/Getting Started/": {
@@ -169,11 +169,11 @@
             }
         }
     },
-    "nextHealthDataSendTime": 1472131029787,
+    "nextHealthDataSendTime": 1473182625249,
     "workingSetSortMethod": "cmd.sortWorkingSetByAdded",
     "healthDataNotificationShown": true,
     "auto-install-extensions": {},
-    "lastInfoURLFetchTime": 1472044634130,
+    "lastInfoURLFetchTime": 1473096227582,
     "updateInfo": [
         {
             "buildNumber": 16898,
