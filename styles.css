@@ -49,7 +49,7 @@
 #story
 {
     position: absolute;
-    top: 20vh;
+    top: 8%;
     left: 30%;
 
     width: 40%;
@@ -76,6 +76,17 @@
     color: #eee;
     border-radius: 15px;
     background-color: rgba(0,0,0,.4);
+}
+
+img
+{
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+
+            user-drag: none;
+    -webkit-user-drag: none;
 }
 
 a
@@ -171,7 +182,7 @@ a
     position: absolute;
     z-index: 6;
     top: 45px;
-    left: 408px;
+    left: 415px;
 
     width: 560px;
     height: 253px;
@@ -228,7 +239,7 @@ a
     position: absolute;
     z-index: 11;
     top: 303px;
-    left: 514px;
+    left: 508px;
 
     width: 130px;
     height: 144px;
@@ -239,7 +250,7 @@ a
     position: absolute;
     z-index: 12;
     top: 271px;
-    left: 382px;
+    left: 376px;
 
     width: 150px;
     height: 176px;
@@ -300,6 +311,13 @@ a
     height: 61px;
 }
 
+#Years
+{
+    position: absolute;
+
+    transform-origin: 590px 100px;
+}
+
 
 @-webkit-keyframes scrollAnimation
 {
@@ -338,9 +356,9 @@ a
 
 #arrows
 {
-    -webkit-animation: scrollAnimation .7s alternate linear infinite;
-       -moz-animation: scrollAnimation .7s alternate linear infinite;
-            animation: scrollAnimation .7s alternate linear infinite;
+    -webkit-animation: scrollAnimation .8s alternate linear infinite;
+       -moz-animation: scrollAnimation .8s alternate linear infinite;
+            animation: scrollAnimation .8s alternate linear infinite;
 }
 
 .scroll a
@@ -360,28 +378,24 @@ a
 
     text-align: center;
 
-    color: #e4e9ed ;
-}
-
-#continue :hover
-{
-    transform: scale(1.05);
+    color: #edf1f5 ;
 }
 
 
 .menucon
 {
     top: 40%;
+    padding-top: 2.5%
 }
 
 .menu
 {
     position: relative;
-    z-index: 30;
+    z-index: 5;
     left: 20%;
 
     width: 60%;
-    height: 45vh;
+    height: 18em;
 
     text-align: center;
 }
@@ -434,7 +448,7 @@ a
  }*/
 
 /*Timeline*/
-#scale
+#scaleDiv
 {
     position: relative;
     /*overflow: hidden;*/

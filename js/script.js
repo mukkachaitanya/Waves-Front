@@ -22,13 +22,15 @@ var myresize = function(idName, reqWidth, reqHeight) {
         el.style.webkitTransform = 'scale(' + ratio + ',' + ratio + ')';
 
         el.style.left = marginL + 'px';
-        el.style.top = marginT + 'px';
+        if (idName != "#scaleDiv") {
+            el.style.top = marginT + 'px';
+        }
     });
 }
 
 function individualResize() {
     myresize("#background", 1440, 720);
-    myresize("#scale", 1280, 600);
+    myresize("#scaleDiv", 1280, 600);
 }
 
 window.onresize = individualResize;
