@@ -16,6 +16,13 @@
 </head>
 
 <body>
+	<div id="loader" class="parallax black">
+		<img style="width: 100%; height: 100%;" src="/images/loader.gif" alt="Unsplashed background img 2" >
+		<img class="center" style="opacity: 0.7;width: auto;max-height: 100%;" src="http://www.bits-waves.org/static/images/Logo.png" alt="" />
+		<div id="mob_text">
+
+		</div>
+	</div>
 	<div id="WavesLogo" style="position:fixed;width:100%;height:auto;">
 		<div id="background" class="my-center" data-230p=" opacity: 1" data-300p=" opacity: 0; display:block;" data-330p="display: none">
 
@@ -129,27 +136,7 @@
 		<div class="menucon">
 			<table class="menu" data-300p="opacity:0;" data-330p="opacity:1">
 				<tr>
-					<!-- <td><i class="fa fa-fire fa-4x" aria-hidden="true"></i>
-						<br>Pro Nites</td>
-					<td><i class="fa fa-camera-retro fa-5x" aria-hidden="true"></i>
-						<br>Events</td>
-					<td><i class="fa fa-flag-checkered fa-4x" aria-hidden="true"></i>
-						<br>Sponsors</td>
-					<td><i class="fa fa-building-o fa-4x" aria-hidden="true"></i>
-						<br>Hospitality</td>
-				</tr>
-				<tr>
-					<td><i class="fa fa-paper-plane-o fa-4x" aria-hidden="true"></i>
-						<br>Previous Year</td>
-					<td><i class="fa fa-pagelines fa-4x" aria-hidden="true"></i>
-						<br>Sightseeing</td>
-					<td><i class="fa fa-envelope-o fa-4x" aria-hidden="true"></i>
-						<br>Contact</td>
-					<td><i class="fa fa-users fa-4x" aria-hidden="true"></i>
-						<br>Team</td>
-				</tr> -->
-				<tr>
-        	<td><a href="/pronights"><i class="fa fa-fire fa-4x" aria-hidden="true"></i><br>Pro Nites</td>
+					<td><a href="/pronights"><i class="fa fa-fire fa-4x" aria-hidden="true"></i><br>Pro Nites</td>
 					<td><a href="/events"><i class="fa fa-camera-retro fa-4x" aria-hidden="true"></i><br>Events</td>
 					<td><a href="/sponsors"><i class="fa fa-flag-checkered fa-4x" aria-hidden="true"></i><br>Sponsors</td>
 					<td><a href="/hospitality"><i class="fa fa-building-o fa-4x" aria-hidden="true"></i><br>Hospitality</td>
@@ -163,10 +150,10 @@
 			</table>
 			<table class="submenu" data-300p="opacity:0;" data-330p="opacity:1">
 				<tr>
-					<td><i class="fa fa-anchor fa-2x" aria-hidden="true"></i>
-						<br>Register</td>
-					<td><i class="fa fa-sign-in fa-2x" aria-hidden="true"></i>
-						<br>Login</td>
+					<td><a href="/accounts/register"><i class="fa fa-anchor fa-2x" aria-hidden="true"></i><br>
+						Register</a></td>
+					<td><a href="/profile/"><i class="fa fa-sign-in fa-2x" aria-hidden="true"></i><br>
+						Login</a></td>
 				</tr>
 				<tr>
 					<td colspan="2">
@@ -199,10 +186,30 @@
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js" charset="utf-8"></script>
 	<script type="text/javascript" src="js/skrollr.min.js"></script>
 	<script type="text/javascript">
-		var s = skrollr.init({
-			smoothScrolling: true,
-			mobileDeceleration: 0.004,
-		});
+		var x = screen.width;
+		var y = window.innerWidth;
+		var z = window.devicePixelRatio;
+		var phyWidth = x;
+
+		if (phyWidth > 450) {
+
+			setTimeout(function() {
+				var s = skrollr.init({
+					smoothScrolling: true,
+					mobileDeceleration: 0.004,
+				});
+
+			}, 500);
+			$(window).load(function() {
+				$('#loader').delay(500).fadeOut(function () {
+						$(this).css("display", "none");
+				});
+			});
+		} else {
+				$('#mob_text').append('<a href="/mobile">Click here to go Mobile site!</a>');
+				$('#Header').css("display", "none");
+				$('#WavesLogo').css("display", "none");
+		}
 	</script>
 	<script type="text/javascript" src="js/script.js"></script>
 </body>
