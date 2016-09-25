@@ -9,7 +9,6 @@ var myresize = function(idName, reqWidth, reqHeight) {
     var ratio = ratioW < ratioH ? ratioW : ratioH;
     var marginL = ((window.innerWidth - (ratio * Width)) / 2) * ratio;
     var marginT = ((window.innerHeight - (ratio * Height)) / 2) * ratio;
-    console.log(ratio, marginT, marginL);
 
     var divs = document.querySelectorAll(idName);
 
